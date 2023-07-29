@@ -161,6 +161,7 @@ input {
   display: flex;
   text-align: justify;
   padding: 0 1rem 0.2rem 1rem;
+  color: rgba(59, 59, 59, 0.774);
 }
 .project-icons {
   padding: 2rem 0 0 15rem; 
@@ -211,6 +212,7 @@ input {
 .announcement-desc {
   font-size: .8rem;
   padding: 0 1rem 1rem 1rem;
+  color: rgba(59, 59, 59, 0.774);
 }
 hr {
   margin: 0 1rem 0 1rem;
@@ -230,6 +232,9 @@ hr {
 }
 .at {
   font-weight: 900;
+}
+.user {
+  color: rgba(59, 59, 59, 0.774);
 }
 .at,
 .user {
