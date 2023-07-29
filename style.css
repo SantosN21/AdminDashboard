@@ -5,7 +5,7 @@
 body {
   background-color: rgb(128, 138, 138);
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 15% 85%;
   width: 100vw;
   height: 100vh;
@@ -16,24 +16,20 @@ body {
   text-align: center;
 }
 #header {
-  background-color: aliceblue;
+  background-color: white;
   box-shadow: 0px 3px 0px 0px rgb(19, 18, 18);
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 50% 50%;
 }
-#main {
-  background-color: rgb(220, 226, 230);
-  box-shadow: -1px -3px 5px 0px rgb(19 18 18 / 18%);
-}
 #sidebar {
   grid-row: 1/3;
-  background-color: rgb(15, 150, 240);
+  background-color: #47B5FF;
   text-align: center;
   padding: 1rem;
 }
 .dashboard {
-   font-size: 2rem;
+   font-size: 2.5rem;
    color: white;
 }
 .list-one, 
@@ -45,15 +41,10 @@ body {
   align-items: start;
 }
 li {
-  padding: .5rem;
+  font-size: 1.2rem;
+  padding: .7rem 0 .7rem 4.5rem;
   list-style-type: none;
   color: white;
-}
-li:hover {
-  cursor: pointer;
-}
-li:active {
-  transform: translateY(2px);
 }
 .fa-solid, 
 .fa-regular {
@@ -63,7 +54,8 @@ li:active {
   padding: 0.5rem;
 }
 input {
-  border-radius: 1rem;
+  border: solid 1px rgb(220, 226, 230);
+  border-radius: .5rem;
   border-style: none;
   background-color: rgb(220, 226, 230);
   width: 45rem;
@@ -89,7 +81,7 @@ input {
 .new, 
 .upload, 
 .share {
-  background-color:rgb(15, 150, 240);
+  background-color:#47B5FF;
   height: 1.7rem;
   width: 6rem;
   border-radius: 1rem;
@@ -128,6 +120,164 @@ input {
   font-weight: 900;
   padding: .5rem;
 }
+#main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 6% 94%;
+  background-color: #e2e8f0;
+  box-shadow: -1px -3px 5px 0px rgb(19 18 18 / 18%);
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 1rem;
+  padding: 0.5rem 5rem 0 0;
+}
+.project {
+  padding: 0.5rem;
+}
+.project-card {
+  background-color: white;
+  height: 14rem;
+  width: 28rem;
+  border-radius: .5rem;
+  border-left: 10px solid #ffb45f;
+  box-shadow: -1px -3px 5px 0px rgb(19 18 18 / 18%);
+}
+.your-projects {
+  display: flex;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.project-title {
+  display: flex;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 1rem 0 0.2rem 1rem;
+}
+.project-description {
+  display: flex;
+  text-align: justify;
+  padding: 0 1rem 0.2rem 1rem;
+}
+.project-icons {
+  padding: 2rem 0 0 15rem; 
+}
+.announcements{
+  display: grid;
+  padding: .8rem 0 0 .5rem;
+  grid-template-rows: 45% 10% 45%;
+}
+.announcement-msgs {
+  height: 23rem;
+  width: 23rem;
+  background-color: white;
+  border-radius: .5rem;
+  box-shadow: -1px -3px 5px 0px rgb(19 18 18 / 18%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+.announcments-title {
+  display: flex;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem 0 0.2rem 1rem;
+}
+.trending {
+  display: flex;
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding-top: 2.6rem;
+  padding-left: .8rem;
+}
+.social-card {
+  height: 20rem;
+  width: 23rem;
+  background-color: white;
+  border-radius: .5rem;
+  box-shadow: -1px -3px 5px 0px rgb(19 18 18 / 18%);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.announcement-hdr {
+  font-weight: 900;
+  padding: 1rem 0 .1rem 1rem;
+}
+.announcement-desc {
+  font-size: .8rem;
+  padding: 0 1rem 1rem 1rem;
+}
+hr {
+  margin: 0 1rem 0 1rem;
+  height:1px;
+  border-width:0;
+  color:rgba(228, 222, 222, 0.253);
+  background-color:rgb(204, 203, 203);
+}
+.trending-social {
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: 2.5rem;
+  display: flex;
+}
+.social-container {
+  padding: 1rem 0 0 2.8rem;
+}
+.at {
+  font-weight: 900;
+}
+.at,
+.user {
+  text-align: justify;
+}
+.social-handle-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BUTTONS ANIMATIONS */
+.project-icons:hover {
+  cursor: pointer;
+}
+.fa-eye:active {
+  transform: translateY(2px);
+}
+.fa-star:active {
+  transform: translateY(2px);
+}
+.fa-share-from-square:active {
+  transform: translateY(2px);
+}
+li:hover {
+  cursor: pointer;
+}
+li:active {
+  transform: translateY(2px);
+}
 .new:active {
   transform: translateY(2px);
 }
@@ -152,3 +302,6 @@ input {
 .fa-bell:hover {
   cursor: pointer;
 }
+
+
+
